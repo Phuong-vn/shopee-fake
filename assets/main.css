@@ -610,7 +610,7 @@
 
 /* App container */
 .app__container {
-    background-color: #e5e5e5;
+    background-color: #f5f5f5;
 }
 
 .category {
@@ -681,4 +681,108 @@
     position: absolute;
     top: 36%;
     left: -6%;
+}
+
+/* Body: Content */
+/* Body-Content: Filter */
+.content__heading {
+    display: flex;
+    justify-content: space-between;
+    background-color: #ededed;
+    border-radius: 2px;
+}
+
+.content__filter {
+    display: flex;
+}
+
+.content__filter-label {
+    font-size: 1.4rem;
+    color: var(--text-color);
+}
+
+.content__filter .btn {
+    margin: 0 8px;
+}
+
+.content__filter-selection {
+    width: 200px;
+    margin-left: 8px;
+    background-color: var(--white-color);
+    font-size: 1.4rem;
+    border-radius: 2px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    cursor: pointer;
+}
+
+.content__filter-selection:hover .content__filter-selection-list {
+    display: block;
+}
+
+.content__filter-selection-list {
+    /* ul tag */
+    list-style: none;
+    color: var(--text-color);
+    padding-left: 0;
+    margin: 0;
+    width: 100%;
+    position: absolute;
+    top: calc(100% + 2px);
+    left: 0;
+    background-color: var(--white-color);
+    display: none;
+    z-index: 1;
+}
+
+.content__filter-selection-list::before {
+    content: "";
+    width: 100%;
+    height: 16px;
+    position: absolute;
+    top: -10px;
+}
+
+.content__filter-selection-list li:hover {
+    cursor: pointer;
+    color: var(--primary-color);
+    background-color: #fafafa;
+}
+
+.content__page {
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+}
+
+.content__page-number {
+    margin-right: 16px;
+}
+
+.content__page-number-current {
+    margin-right: -4px;
+    color: var(--primary-color);
+}
+
+.content__page-control {
+    background-color: var(--white-color);
+    border-radius: 2px;
+}
+
+.content__page-control a {
+    text-decoration: none;
+    border: 1px solid #f2f2f2;
+    display: inline-block;
+}
+
+.content__page-control a:first-child {
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    margin-right: -4px;
+}
+
+.content__page-control a:last-child {
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
 }
