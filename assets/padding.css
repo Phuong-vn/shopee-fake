@@ -39,6 +39,10 @@
     padding: 0 16px;
 }
 
+.pad-0-20 {
+    padding: 0 20px;
+}
+
 .pad-0-32 {
     padding: 0 32px;
 }
@@ -61,6 +65,14 @@
 
 .pad-16-0 {
     padding: 16px 0;
+}
+
+.pad-20-0 {
+    padding: 20px 0;
+}
+
+.pad-40-0 {
+    padding: 40px 0;
 }
 
 .pad-8-12 {
