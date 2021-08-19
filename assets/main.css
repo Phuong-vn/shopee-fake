@@ -729,11 +729,12 @@
     margin: 0;
     width: 100%;
     position: absolute;
+    z-index: 1;
     top: calc(100% + 2px);
     left: 0;
     background-color: var(--white-color);
+    animation: fadeIn 0.4s;
     display: none;
-    z-index: 1;
 }
 
 .content__filter-selection-list::before {
