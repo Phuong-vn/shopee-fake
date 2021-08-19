@@ -702,7 +702,8 @@
 }
 
 .content__filter .btn {
-    margin: 0 8px;
+    margin: 0 8px;    
+    box-shadow: 0 0px 1px #ccc;
 }
 
 .content__filter-selection {
@@ -710,7 +711,8 @@
     margin-left: 8px;
     background-color: var(--white-color);
     font-size: 1.4rem;
-    border-radius: 2px;
+    border-radius: 2px;    
+    box-shadow: 0 0px 1px #ccc;
     display: flex;
     justify-content: space-between;
     position: relative;
@@ -762,13 +764,14 @@
 }
 
 .content__page-number-current {
-    margin-right: -4px;
     color: var(--primary-color);
 }
 
 .content__page-control {
     background-color: var(--white-color);
     border-radius: 2px;
+    box-shadow: 0 0px 1px #ccc;
+    overflow: hidden;
 }
 
 .content__page-control a {
@@ -778,12 +781,9 @@
 }
 
 .content__page-control a:first-child {
-    border-top-left-radius: 2px;
-    border-bottom-left-radius: 2px;
     margin-right: -4px;
 }
 
-.content__page-control a:last-child {
-    border-top-right-radius: 2px;
-    border-bottom-right-radius: 2px;
+.content__page-control i {
+    color: #555;
 }
