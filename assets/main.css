@@ -683,8 +683,8 @@
     left: -6%;
 }
 
-/* Body: Content */
-/* Body-Content: Filter */
+/* Content */
+/* Content - Heading: Filter */
 .content__heading {
     display: flex;
     justify-content: space-between;
@@ -787,3 +787,200 @@
 .content__page-control i {
     color: #555;
 }
+
+/* Content - Body: Product */
+.content__product {
+    background-color: var(--white-color);
+    margin-top: 10px;
+}
+
+.content__product-img {
+    padding-top: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    position: relative;
+}
+
+.content__product-overlay-img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.content__product-certification {
+    width: 65px;
+    padding: 2px 0 1px 4px;
+    margin-left: -4px;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    color: #d0011b;
+    background-color: currentColor;
+    font-size: .7rem;
+    line-height: .8rem;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 10px;
+    left: 0;    
+}
+
+.content__product-certification::after {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    border-top: 4px solid currentColor;
+    border-left: 4px solid transparent;
+    filter: brightness(60%);
+}
+
+.content__product-certification span {
+    color: rgb(221, 221, 221);    
+}
+
+.content__product-discount {
+    width: 36px;
+    height: 32px;
+    color: #ffd839;
+    background-color: currentColor;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.content__product-discount::after {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    border-style: solid;
+    border-color: transparent currentColor;
+    border-width: 0 18px 4px;
+}
+
+.content__product-discount-percent {
+    font-size: 1.2rem;
+    color: #ee4d2d;    
+    text-align: center;
+}
+
+.content__product-discount-label {
+    font-size: 1.2rem;
+    color: var(--white-color);
+    text-align: center;
+}
+
+.content__product-name {
+    --line-height: 1.4rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: rgba(0,0,0,.8);;    
+    margin: 0;
+    line-height: var(--line-height);
+    height: calc(2 * var(--line-height));
+    overflow: hidden;
+    display: block;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+
+/* .content__product-coupon {
+
+} */
+
+.content__product-price {
+    margin-top: 5px;
+    display: flex;
+}
+
+.content__product-price-old {
+    font-size: 1.2rem;
+    color: #ccc;
+    text-decoration: line-through;
+    margin-right: 10px;
+    flex: 0 1 auto;
+}
+
+.content__product-price-current {
+    /* flex: 1 0 auto; */
+    font-size: 1.6rem;
+    color: var(--primary-color);
+}
+
+.content__product-price-old,
+.content__product-price-current {    
+    display: inline-block;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.content__product-price-current span:first-child {
+    font-size: 0.8rem;
+    margin-right: -2px;
+    position: relative;
+    top: -3px;
+}
+
+.content__product-free-ship {
+    margin-left: auto;
+    padding-left: 2px;
+    display: flex;
+    align-items: center;
+}
+
+.content__product-action {
+    display: flex;
+    margin-top: 5px;
+}
+
+.content__product-like {
+    font-size: 1.1rem;
+    margin-right: 5px;
+}
+
+.content__product-like__fill {
+    color: #f63d30;
+}
+
+.content__product-like .content__product-like__fill {
+    display: none;
+}
+
+.content__product-like--liked .content__product-like__fill {
+    display: inline-block;
+}
+
+.content__product-like--liked .content__product-like__empty {
+    display: none;
+}
+
+.content__product-rating {
+    font-size: 0.8rem;
+    margin-left: auto;
+    opacity: .4;
+}
+
+.content__product-rating-gold {
+    color: var(--star-rating-color);
+}
+
+.content__product-sold-out {
+    margin: 0 0 0 5px;
+    color: rgba(0, 0, 0, .87);
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.content__product-place {
+    margin: 0.5rem 0 0 0;
+    color: rgba(0,0,0,.65);
+    font-size: 1.2rem;
+    font-weight: 300;
+    text-align: right;
+}
+
+
