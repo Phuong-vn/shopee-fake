@@ -360,6 +360,7 @@
     border-radius: 2px;   
     background-color: var(--white-color);    
     position: absolute;
+    z-index: 1;
     top: 140%;
     right: -15%;
     box-shadow: 0 0 1px #777;
@@ -790,8 +791,17 @@
 
 /* Content - Body: Product */
 .content__product {
+    display: block;
+    text-decoration: none;
     background-color: var(--white-color);
     margin-top: 10px;
+    box-shadow: 0 0 2px rgb(226, 216, 216);
+}
+
+.content__product:hover {
+    cursor: pointer;
+    margin-top: 9px;
+    box-shadow: 0 0 10px rgb(226, 216, 216);
 }
 
 .content__product-img {
@@ -818,6 +828,7 @@
     color: #d0011b;
     background-color: currentColor;
     font-size: .7rem;
+    font-weight: 600;
     line-height: .8rem;
     text-transform: uppercase;
     display: flex;
@@ -838,7 +849,7 @@
 }
 
 .content__product-certification span {
-    color: rgb(221, 221, 221);    
+    color: rgb(221, 221, 221);
 }
 
 .content__product-discount {
@@ -862,12 +873,14 @@
 
 .content__product-discount-percent {
     font-size: 1.2rem;
+    font-weight: 500;
     color: #ee4d2d;    
     text-align: center;
 }
 
 .content__product-discount-label {
     font-size: 1.2rem;
+    font-weight: 500;
     color: var(--white-color);
     text-align: center;
 }
@@ -898,7 +911,7 @@
 
 .content__product-price-old {
     font-size: 1.2rem;
-    color: #ccc;
+    color: #8c8a8a;
     text-decoration: line-through;
     margin-right: 10px;
     flex: 0 1 auto;
@@ -908,6 +921,7 @@
     /* flex: 1 0 auto; */
     font-size: 1.6rem;
     color: var(--primary-color);
+    flex: 1 0 auto;
 }
 
 .content__product-price-old,
