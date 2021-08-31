@@ -30,6 +30,11 @@
   .header__sort-bar {
     display: block;
   }
+
+  .app__container {
+    margin-top: 0;
+    padding-top: 0;
+  }
 }
 
 /* Tablet */
