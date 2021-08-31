@@ -246,11 +246,7 @@
 
 /* Mobile side bar */
 .header-mobile__account {
-
-}
-
-.header-mobile__bar {
-
+    display: none;
 }
 
 .header-mobile__bar-icon,
@@ -259,7 +255,6 @@
     color: var(--white-color);
     font-size: 2.2rem;
 }
-
 
 /* .header-mobile__overlay {
     display: none;
@@ -271,10 +266,6 @@
     left: 0;
     background-color: rgba(0, 0, 0, 0.5);
 } */
-
-.header-mobile__account {
-    display: none;
-}
 
 .header-mobile__account-menu {
     position: fixed;
