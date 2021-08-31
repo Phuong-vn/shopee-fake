@@ -14,7 +14,7 @@
 
   .header__cart-portal {
     position: fixed;
-    top: 80px;
+    top: 54px;
     right: 0;
     width: 100%;
   }
@@ -28,6 +28,10 @@
   }
 
   .header__sort-bar {
+    display: block;
+  }
+
+  .mobile-tablet-category {
     display: block;
   }
 
@@ -67,7 +71,7 @@
   }
 
   .header__cart {
-    padding: 28px;
+    padding: 16px 28px;
   }
 
   .header-mobile__account-name {
@@ -92,4 +96,24 @@
     padding-right: 10px;
   }
   
+  .footer {
+    padding-right: 16px;
+  }
+
+  .footer__heading {
+    text-align: center;
+  }
+  
+  .footer__body li {
+    justify-content: center;
+  }
+
+  .footer__body-link {
+    text-align: center;
+  }
+
+  .footer__img {
+    display: flex;
+    justify-content: center;
+  }
 }

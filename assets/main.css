@@ -255,7 +255,7 @@
 
 .header-mobile__bar-icon,
 .header-mobile__close-icon {
-    padding: 28px;
+    padding: 16px 28px;
     color: var(--white-color);
     font-size: 2.2rem;
 }
@@ -436,6 +436,7 @@
 .header__cart-wrap {
     position: relative;
     cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .header__cart-icon {
@@ -715,7 +716,7 @@
 .header__sort-bar {
     position: fixed;
     z-index: 1;
-    top: 78px;
+    top: 54px;
     background-color: var(--white-color);
     width: 100%;
     display: none;
@@ -759,6 +760,7 @@
 /* Mobile / Tablet category */
 .mobile-tablet-category {
     margin-top: 120px;
+    display: none;
 }
 
 .mobile-tablet-category__list {
@@ -791,6 +793,7 @@
     text-align: center;
     border-radius: 5px;
     font-size: 1.2rem;
+    padding: 0 6px;
 }
 
 .mobile-tablet-category__item:nth-of-type(3n - 1) .mobile-tablet-category__link {
