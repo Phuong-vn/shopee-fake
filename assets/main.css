@@ -1,3 +1,7 @@
+.main {
+    overflow: hidden;
+}
+
 /* Begin: Header */
 
 .header {
@@ -298,7 +302,6 @@
     display: flex;
     align-items: center;
     padding-right: 28px;
-    font-size: 1.6rem;
 }
 
 .header-mobile__account-name {

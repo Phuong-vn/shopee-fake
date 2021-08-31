@@ -64,5 +64,27 @@
   .header__cart {
     padding: 28px;
   }
+
+  .header-mobile__account-name {
+    font-size: 1.8rem;
+  }
+
+  .header__search-bar {
+    background-color: transparent;
+  }
+
+  .header__search-bar-input {
+    display: none;
+  }
+
+  .header__search-bar-icon {
+    background-color: transparent;
+    padding: 0;
+  }
+
+  .app__container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
   
 }

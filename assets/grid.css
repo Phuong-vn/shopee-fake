@@ -7,10 +7,10 @@ Offset: prefix-o-number
 No gutters: .row.no-gutters */
 
 :root {
-  --c-spacing: 4px;
-  --m-spacing: 8px;
-  --l-spacing: 12px;
-  --xl-spacing: 12px
+  --c-spacing: 5px;
+  --m-spacing: 5px;
+  --l-spacing: 5px;
+  --xl-spacing: 5px
 }
 
 .grid {
