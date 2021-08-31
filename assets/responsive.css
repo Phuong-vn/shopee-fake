@@ -7,6 +7,22 @@
   .header__search-section {
     height: auto;
   }
+
+  .header__cart-portal {
+    position: fixed;
+    top: 80px;
+    right: 0;
+    width: 100%;
+  }
+
+  .header__cart-portal::before {
+    display: none;
+  }
+
+  .header__cart-list-body {
+    height: 25vh;
+  }
+
 }
 
 /* Tablet */
@@ -17,7 +33,11 @@
 
   .header__cart {
     padding: 28px 36px;
-}
+  }
+
+  .header__cart-portal {
+    padding: 0 45px;
+  }
 }
 
 /* Mobile */
@@ -25,4 +45,13 @@
   .hide-on-mobile {
     display: none;
   }
+
+  .header__search-section {
+    margin-left: 12px;
+  }
+
+  .header__cart {
+    padding: 28px 28px;
+  }
+  
 }
