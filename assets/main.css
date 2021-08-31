@@ -335,6 +335,10 @@
 }
 
 /* Header cart */
+.header__cart {
+    padding: 28px 52px;
+}
+
 .header__cart-wrap {
     position: relative;
     cursor: pointer;

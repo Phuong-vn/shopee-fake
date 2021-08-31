@@ -1,14 +1,28 @@
 /* Tablet and Mobile */
 @media (max-width: 1023px) {
-  
+  .hide-on-tablet-mobile {
+    display: none;
+  }
+
+  .header__search-section {
+    height: auto;
+  }
 }
 
 /* Tablet */
 @media (min-width: 740px) and (max-width: 1023px) {
+  .hide-on-tablet {
+    display: none;
+  }
 
+  .header__cart {
+    padding: 28px 36px;
+}
 }
 
 /* Mobile */
 @media (max-width: 739px) {
-
+  .hide-on-mobile {
+    display: none;
+  }
 }
