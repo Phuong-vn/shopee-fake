@@ -4,6 +4,10 @@
     display: none;
   }
 
+  .header {
+    z-index: 3;
+  }
+
   .header__search-section {
     height: auto;
   }
@@ -49,12 +53,16 @@
     display: none;
   }
 
+  .header-mobile__account {
+    display: block;
+  }
+
   .header__search-section {
     margin-left: 12px;
   }
 
   .header__cart {
-    padding: 28px 28px;
+    padding: 28px;
   }
   
 }
