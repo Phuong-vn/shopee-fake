@@ -509,12 +509,6 @@
 }
 /* Finish: Header */
 
-
-
-
-
-
-
 /* Modal */
 /* Đăng ký */
 .auth-form-container {
@@ -621,6 +615,46 @@
     padding-left: 16px;
     color: #888;
     text-decoration: none;
+}
+
+/* Header sort bar */
+.header__sort-bar {
+    position: fixed;
+    z-index: 1;
+    top: 78px;
+    background-color: var(--white-color);
+    width: 100%;
+    display: none;
+}
+
+.header__sort-list {
+    display: flex;
+    width: 100%;
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+.header__sort-item {
+    width: 100%;
+}
+
+.header__sort-item:not(:first-child) {
+    border-left: 1px solid #ccc;
+}
+
+.header__sort-link {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color: var(--text-color);
+    font-size: 1.2rem;
+}
+
+.header__sort-link--active {
+    color: var(--primary-color);
 }
 
 /* App container */

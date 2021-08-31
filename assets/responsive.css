@@ -23,6 +23,9 @@
     height: 25vh;
   }
 
+  .header__sort-bar {
+    display: block;
+  }
 }
 
 /* Tablet */
